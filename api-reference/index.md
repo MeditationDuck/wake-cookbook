@@ -135,3 +135,16 @@ tx = contract.someOperation()
 You can add `import "wake/console.sol";` in the `.sol` and
 By placing `console.log(variable)` or `console.logBytes(bytesData)`. and recompile by `$ wake init pytypes`.
 Now available in `tx.call_trace`.
+
+# Timestamp
+
+You can access current timestamp by `chain.blocks["latest"].timestamp`.
+
+# Timestamp manipulation
+
+Example of advancing time on the test. for each chain, test can advance timestamp.
+
+```python
+seconds = 10
+chain.mine(lambda x: x + seconds)
+```

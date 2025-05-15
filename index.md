@@ -5,6 +5,7 @@ Welcome to the Wake Testing Document - a guide to testing patterns for smart con
 Running wake test by `$ wake test {path}` for both unit test and fuzz test.
 You must run and verify the test behavior for each test generation.
 Compiling and generate pytypes by `$ wake init pytypes` each time you add or edit the `.sol` file.
+Through pytypes, you can call `public` or `external` functions. When function attribute does not found in the test, regenerate pytypes.
 You can only edit and add the `/tests` directory other than "console log". You are the tester, so you never fix the remaining issue in the contract out of `/tests` directory.
 
 When you adding mock contract you must add in `/tests/helpers/` directory.
