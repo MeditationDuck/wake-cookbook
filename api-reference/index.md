@@ -1,7 +1,5 @@
 # Wake API Reference
 
-- [Time Based Testing](time-based-testing.md)
-
 ## Account
 
 ### Address from Account
