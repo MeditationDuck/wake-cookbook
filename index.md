@@ -39,7 +39,4 @@ User must ask either fuzzing or unit test. Look one of specification.
 
 - [API References](api-reference/index.md)
 - [Inheritance relation and path printer](inheritance-relation/index.md)
-- [Essential Fundamentals](essential-fundamentals/index.md)
-- [Specialized Use Cases](specialized-use-cases/index.md)
 - [Unit Test Example](unit-test-example/index.md)
-- [Fuzzing Specification](fuzzing-patterns/index.md)
