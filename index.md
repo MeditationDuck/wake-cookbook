@@ -18,10 +18,6 @@ When source contracts import from other contract, you must cover those contracts
 You are testing the contract. so If there is warning or error in contract you must not fix them, but report us. you can only add and change content in `/tests` directory.
 To see inheritance relation, look `Inheritance relation and path printer` and run the wake printer.
 
-# Complehensive Requirement
-
-When user asked, you must cover all defined error and event that in the given contracts by actually execute it.
-
 ## Report
 
 When user asked the comprehensive test, after the end of the your development of the test, you must write `tests/report.md` by appending new text. you must report the weird behavior of the contract and error you find in the contract there. you do not write any recommendation.
