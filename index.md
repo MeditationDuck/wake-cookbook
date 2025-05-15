@@ -1,6 +1,6 @@
-# Wake Testing Guide
+# Wake Testing Document
 
-Welcome to the Wake Testing Guide - a guide to testing patterns for smart contracts using Wake.
+Welcome to the Wake Testing Document - a guide to testing patterns for smart contracts using Wake.
 
 Running wake test by `$ wake test {path}` for both unit test and fuzz test.
 You must run and verify the test behavior for each test generation.
