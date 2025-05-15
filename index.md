@@ -31,7 +31,7 @@ from wake_rs import Chain
 ```
 
 Especially for `abi.encode` and random library, always use `wake.testing.abi`.
-Detail usage of them are in `wake` documents.
+Details in [API References](api-reference/index.md)
 
 # Categories
 
