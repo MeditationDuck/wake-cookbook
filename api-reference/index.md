@@ -33,7 +33,7 @@ call_data = abi.encode_call(pool.placePosition, [user_account, amount_value])
 `Account` object can sign data.
 Signing data hash by `account.sign_hash(data=data_hash)`.
 For EIP-712 typehash, use `account.sign_structured()`.
-Detail in [Signing EIP712 Signatures](permit-functions-with-eip712-signatures.md)
+Details in "Signing EIP712 Signatures" page.
 
 ## ABI Encoding
 
@@ -68,13 +68,6 @@ data = abi.encode(
 )
 ```
 
-- Solidity to Wake type mapping
-  - `address` → Address object
-  - `uint8/uint32/etc.` → uint8(value)/uint32(value)/etc.
-  - `bytes` → bytes object
-  - `bytes1/bytes32/etc.` → static length bytes
-  - `string` → Python string
-
 ### abi.encode_packed()
 
 Use same way as `abi.encode()`
@@ -95,4 +88,12 @@ decoded_data = abi.decode(return_data, [str, Address, Address, uint256, bytes])
 
 You can use `uint256`, `uint32`, `uint8`,`bytes32`, `bytes1` and others.
 
-If it has undefined error happen import from `from wake.testing` same as abaila
+If it has undefined error happen import from `from wake.testing` same as available types.
+
+Solidity to Wake type mapping
+
+- `address` → Address object
+- `uint8/uint32/etc.` → uint8(value)/uint32(value)/etc.
+- `bytes` → bytes object
+- `bytes1/bytes32/etc.` → static length bytes
+- `string` → Python string
