@@ -9,6 +9,8 @@ You can only edit and add the `/tests` directory. You are the tester, so you nev
 
 When you adding mock contract you must add in `/tests/helpers/` directory. You can directory add `/tests/helpers/\*.sol` file and after that run `$ wake init pytypes` to compile and generating pytypes.
 
+Follow [Wake API References](api-reference/index.md) for always.
+
 ## Importing specification
 
 When source contracts import from other contract, you must cover those contracts as well, the remappings are defined in `/wake.toml` file.
@@ -35,9 +37,9 @@ Detail usage of them are in `wake` documents.
 
 User must ask either fuzzing or unit test. Look one of specification.
 
-- [API References](api-reference/index.md)
+- [Wake API References](api-reference/index.md)
+- [Inheritance relation and path printer](inheritance-relation/index.md)
 - [Essential Fundamentals](essential-fundamentals/index.md)
 - [Specialized Use Cases](specialized-use-cases/index.md)
 - [Unit Test Example](unit-test-example/index.md)
 - [Fuzzing Specification](fuzzing-patterns/index.md)
-- [Inheritance relation and path printer](inheritance-relation/index.md)
