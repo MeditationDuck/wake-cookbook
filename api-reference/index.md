@@ -97,3 +97,41 @@ Solidity to Wake type mapping
 - `bytes` → bytes object
 - `bytes1/bytes32/etc.` → static length bytes
 - `string` → Python string
+
+## Direct State Manipulation with mint_erc20
+
+For all unit tests involving ERC20 tokens, prefer the `mint_erc20(contract,to,amount)` function over `transfer`s when setting up token balances. This approach is cleaner and more appropriate for unit testing as it:
+
+1. Directly manipulates the token's storage state
+2. Bypasses transfer restrictions that might exist in the token contract and totalsupply
+3. Reduces test complexity by avoiding unnecessary transactions
+4. Makes tests more deterministic and focused on the behavior being tested
+
+Example:
+
+```python
+mint_erc20(
+    contract=token, ## ERC20 Token contract
+    to=player, ## user who increase balance
+    amount=amount
+)
+```
+
+Similarly, use `mint_erc721` and `mint_erc1155` for NFT-related tests when appropriate.
+
+## Debugging & Troubleshooting
+
+Contract function calls return a `TransactionAbc` object for debugging.
+`tx.events` is all emitted events, you can use `print(tx.events)`.
+`print(tx.call_trace)` call trace of complete execution flow.
+`print(tx.console_logs)` console log, debug output during execution
+
+```python
+tx = contract.someOperation()
+```
+
+### Using Console Logs
+
+You can add `import "wake/console.sol";` in the `.sol` and
+By placing `console.log(variable)` or `console.logBytes(bytesData)`. and recompile by `$ wake init pytypes`.
+Now available in `tx.call_trace`.
