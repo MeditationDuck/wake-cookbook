@@ -1,8 +1,6 @@
 # Wake API Reference
 
 - [Time Based Testing](time-based-testing.md)
-- [Token Testing](token-testing.md) - Wake library for manipulate user token balance.
-- [Signing EIP712 Signatures](permit-functions-with-eip712-signatures.md)
 
 ## Account
 
