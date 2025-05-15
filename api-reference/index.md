@@ -37,8 +37,9 @@ Detail in [Signing EIP712 Signatures](permit-functions-with-eip712-signatures.md
 
 ## ABI Encoding
 
-Use correct abi encoding and decoding library at `wake.testing.abi`.
+Use correct abi encoding and decoding library from `from wake.testing import abi`.
 Use `abi.encode()`, `abi.encode_packed()`, `abi.decode()`.
+You can add directly to `abi.encode()` data, without adding defining types.
 `abi.decode` is defined as `decode(data: bytes, types: Sequence[Type])`
 For example,
 
