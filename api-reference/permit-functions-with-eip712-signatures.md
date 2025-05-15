@@ -1,6 +1,5 @@
-# Permit Functions with EIP712 Signatures
+# EIP712 Signatures
 
-Example of testing EIP712 signatures.
 The `sign_structured` is used by default, since it automatically generate and sign with typehash. and it test contract type and hash itself.
 
 ```python

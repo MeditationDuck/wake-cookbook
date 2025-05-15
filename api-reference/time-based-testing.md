@@ -3,7 +3,8 @@
 Example of advancing time on the test. for each chain, test can advance timestamp.
 
 ```python
-seconds_advance = 10
+seconds = 10
 
-chain.mine(lambda x: x + seconds_advance)
+# This increase `chain.blocks["latest"].timestamp` timestamp.
+chain.mine(lambda x: x + seconds)
 ```
